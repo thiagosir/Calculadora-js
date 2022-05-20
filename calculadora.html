@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="calcular.js"></script>
+</head>
+
+<body>
+    <center>
+
+
+        
+        <h2>Calculadora</h2>
+        <p></p>
+
+
+        <input type="number" id="n1" placeholder="Digite o primeiro valor"><br>
+        <input type="number" id="n2" placeholder="Digite o segundo valor"><br><br>
+
+        <button onclick="somar()">+</button>
+        <button onclick="subtrair()">-</button>
+        <button onclick="dividir()">/</button>
+        <button onclick="multiplicacao()">*</button>
+        <button onclick="media()">Mé</button>
+        <button onclick="raiz()">√</button><br>
+        
+        Resultado: <div id="resp"></div><br>
+
+        <button onclick="clean()">Limpar</button>
+        <!-- <input type="reset" value="Limpar"> -->
+        <p>----------------------------------------------</p>
+
+        <h2>Conversor Binário</h2>
+        <h4>Binário => Decimal</h4>
+        <p></p>
+
+
+        <input type="number" id="n3" placeholder="Digite o número que deseja converter"><br><br>
+
+        <button onclick="bin()">Converter</button>
+        <button onclick="cleanBin()">Limpar</button><br><br>
+        
+
+        Resultado: <div id="resp1"></div><br>
+
+        <p>----------------------------------------------</p>
+
+        <h2>Calcular Velocidade Média(M/s)</h2>
+        <p></p>
+
+        <label>Velocidade: </label>
+        <input type="number" id="velo" placeholder="Velocidade em M/s"><br>
+        <label>Distância: </label>
+        <input type="number" id="dist" placeholder="Distância em Metros"><br>
+        <label>Tempo: </label>
+        <input type="number" id="temp" placeholder="Tempo em Segundos"><br><br>
+
+        <button onclick="velocidade()">Calcular</button>
+        <button onclick="cleanVelo()">Limpar</button><br><br>
+        
+        Resultado: <div id="resp2"></div><br>
+
+        <p>----------------------------------------------</p>
+
+        <h2>Calcular Potência Elétrica</h2>
+        <p></p>
+
+        <input type="number" id="n6" placeholder="">
+        <input type="number" id="n7" placeholder=""><br><br>
+
+        <button onclick="potencia()">Calcular</button>
+        <button onclick="cleanPot()">Limpar</button><br><br>
+        
+        Resultado: <div id="resp3"></div><br>
+
+
+
+    </center>
+</body>
+
+</html>

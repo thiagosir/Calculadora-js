@@ -6,8 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <script src="calcular.js"></script>
+    <script src="src/calcular.js"></script>
 </head>
+<style>
+    ol{
+        list-style: none;
+        padding: 0px;
+    }
+    li{
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        display:table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+</style>
 
 <body>
     <center>
@@ -35,7 +49,7 @@
         <p>----------------------------------------------</p>
 
         <h2>Conversor Binário</h2>
-        <h4>Binário => Decimal</h4>
+        <h4>Decimal => Binário - Octal - Hexadecimal</h4>
         <p></p>
 
 
@@ -52,12 +66,15 @@
         <h2>Calcular Velocidade Média(M/s)</h2>
         <p></p>
 
-        <label>Velocidade: </label>
-        <input type="number" id="velo" placeholder="Velocidade em M/s"><br>
-        <label>Distância: </label>
-        <input type="number" id="dist" placeholder="Distância em Metros"><br>
-        <label>Tempo: </label>
-        <input type="number" id="temp" placeholder="Tempo em Segundos"><br><br>
+        <ol>
+            <li>Velocidade</li>
+            <li>Distância</li>
+            <li>Tempo</li>
+        </ol>
+
+        <input type="number" id="velo" placeholder="Velocidade em Km/h">
+        <input type="number" id="dist" placeholder="Distância em quilômetros">
+        <input type="number" id="temp" placeholder="Tempo em Horas"><br><br>
 
         <button onclick="velocidade()">Calcular</button>
         <button onclick="cleanVelo()">Limpar</button><br><br>

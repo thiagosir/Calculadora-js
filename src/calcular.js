@@ -97,26 +97,30 @@ function cleanBin() {
 function bin(n3) {
     var n3 = parseInt(document.querySelector("#n3").value);
     var resultado = parseInt(n3).toString(2);
-    document.getElementById("resp1").innerHTML = resultado
+    var resultoctal = parseInt(n3).toString(8);
+    var resulthexa= parseInt(n3).toString(16).toUpperCase();
+    document.getElementById("resp1").innerHTML = "Binário: " + resultado + " - Octal: " + resultoctal + " - Hexadecimal: " + resulthexa;
+
+    
 }
 function velocidade() {
-    var velo = parseInt(document.querySelector("#velo").value);
-    var dist = parseInt(document.querySelector("#dist").value);
-    var temp = parseInt(document.querySelector("#temp").value);
+    var velo = document.querySelector("#velo").value;
+    var dist = document.querySelector("#dist").value;
+    var temp = document.querySelector("#temp").value;
 
-    if (velo && dist != NaN) {
+    if (velo != "" && dist != "") {
         resultado = dist / velo;
-        document.getElementById("resp2").innerHTML = resultado.toFixed(2) + " segundos";
+        document.getElementById("resp2").innerHTML = resultado.toFixed(2) + " Horas";
         console.log(temp)
         
-    }  else if (velo && temp != NaN) {
+    }  else if (velo != "" && temp != "") {
         resultado = velo * temp;
-        document.getElementById("resp2").innerHTML = resultado.toFixed(2) + " metros";
+        document.getElementById("resp2").innerHTML = resultado.toFixed(2) + " Quilômetros";
         console.log(resultado)
 
-    }  else if (dist && temp != NaN) {
+    }  else if (dist != "" && temp != "") {
         resultado = dist / temp;
-        document.getElementById("resp2").innerHTML = resultado.toFixed(2) + " M/s";
+        document.getElementById("resp2").innerHTML = resultado.toFixed(2) + " Km/h";
         console.log(resultado)
     }
 
